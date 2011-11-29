@@ -1,38 +1,128 @@
+/*  18 Vertical CSS File.
+---------------------------------------------------------------------------------------------------
+    version 1.0
 
-/*                          Body text override.
-                            -----------------------------------------------------*/
-                       body { color:#444; font:0.75em/1.5em "Helvetica Neue",helvetica,arial,verdana,sans-serif; }
+    License: none (public domain)
+
+    2011-11-29
+-------------------------------------------------------------------------------------------------*/
 
 
-/*                          Headings.
-                            -----------------------------------------------------*/
-                h1,h2,h3,h4 { color:#000; font-weight:bold; }
-                         h1 { font-size:1.67em; line-height:0.9em; margin-bottom:0.9em; }
-                         h2 { font-size:1.5em; line-height:1em; margin-bottom:1em; }
-                         h3 { font-size:1.3333333333333333em; line-height:1.125em; margin-bottom:1.125em; }
-                         h4 { font-size:1.1666666666666667em; line-height:1.2857142857142858em; margin-bottom:1.2857142857142858em; }
-                          p { font-size:1em; line-height:1.5em; margin-bottom:1.5em; }
+/*  Body text override.
+-----------------------------------------------------*/
+    body {
+      color: #444;
+      font: 0.75em/1.5em "Helvetica Neue",helvetica,arial,verdana,sans-serif;
+    }
 
-/*                          Lists.
-                            -----------------------------------------------------*/
-                         ul { font-size:1em; line-height:1.5em; margin-bottom:1.5em; }
-       ul.classic li:before { content:'\00bb \00A0'; }
+/*  Headings.
+-----------------------------------------------------*/
+    h1,h2,h3,h4 {
+      color: #000;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 1.67em;
+      line-height: 0.9em;
+      margin-bottom: 0.9em;
+    }
+    h2 {
+      font-size: 1.5em;
+      line-height: 1em;
+      margin-bottom: 1em;
+    }
+    h3 {
+      font-size: 1.3333333333333333em;
+      line-height: 1.125em;
+      margin-bottom: 1.125em;
+    }
+    h4 {
+      font-size: 1.1666666666666667em;
+      line-height: 1.2857142857142858em;
+      margin-bottom: 1.2857142857142858em;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+    }
 
-/*                          Blockquote.
-                            -----------------------------------------------------*/
-                 blockquote { border-left:4px solid #AAA; font-size:1em; line-height:1.5em; margin-bottom:1.5em; padding-left:10px; }
-               blockquote p { margin-bottom:0; }
-           blockquote small { color:#888; font-size:0.8333333333333333em; font-family:"Lucida Grande","Helvetica Neue",helvetica,arial,verdana,sans-serif; line-height:1.8em; }
-    blockquote small:before { content:'\2014 \00A0'; }
+/*  Lists.
+-----------------------------------------------------*/
+    ul,ol {
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+    }
+    ul li:before {
+      content: '\00bb \00A0';
+    }
+    ol {
+      list-style: decimal inside;
+    }
 
-/*                          Pre.
-                            -----------------------------------------------------*/
-                        pre { background-color:#DDD; border:1px solid #BBB; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; font-size:1em; line-height:1.5em; margin-bottom:1.5em; padding:.75em; }
+/*  Blockquote.
+-----------------------------------------------------*/
+    blockquote {
+      border-left: 4px solid #AAA;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+      padding-left: 10px;
+    }
+    blockquote p {
+      margin-bottom: 0;
+    }
+    blockquote small {
+      color: #888;
+      font-size: 0.8333333333333333em;
+      font-family: "Lucida Grande","Helvetica Neue",helvetica,arial,verdana,sans-serif;
+      line-height: 1.8em;
+    }
+    blockquote small:before {
+      content: '\2014 \00A0';
+    }
 
-/*                          Labels.
-                            -----------------------------------------------------*/
-                     .label { background-color:#BFBFBF; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; color:#FFF; font-size:0.75em; font-weight:bold; line-height:1.4em; padding:2px 4px; text-transform:uppercase; text-shadow:1px -1px 0 rgba(0,0,0,0.2); white-space:nowrap; }
-           .label.important { background-color:#c43c35; }
-              .label.notice { background-color:#62cffc; }
-             .label.success { background-color:#46a546; }
-             .label.warning { background-color:#f89406; }
+/*  Pre.
+-----------------------------------------------------*/
+    pre {
+      background-color: #DDD;
+      border: 1px solid #BBB;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      font-family: "Monaco", "Helvetica Neue",helvetica,arial,verdana,sans-serif;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+      padding: .75em;
+    }
+
+/*  Labels.
+-----------------------------------------------------*/
+    .label {
+      background-color: #BFBFBF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #FFF;
+      font-size: 0.75em;
+      font-weight: bold;
+      line-height: 1.4em;
+      padding: 2px 4px;
+      text-transform: uppercase;
+      text-shadow: 1px -1px 0 rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+    .label.important {
+      background-color: #c43c35;
+    }
+    .label.notice {
+      background-color: #62cffc;
+    }
+    .label.success {
+      background-color: #46a546;
+    }
+    .label.warning {
+      background-color: #f89406;
+    }

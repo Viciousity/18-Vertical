@@ -1,4 +1,8 @@
+/* Some code for layout display (size). */
 body {
   width: 440px;
   margin: 40px auto;
+}
+.label.code {
+  cursor: pointer;
 }

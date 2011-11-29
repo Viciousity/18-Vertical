@@ -2,31 +2,54 @@
 <html>
   <head>
     <title>18Vertical - Make some rythm</title>
-    <link href="./stylesheets/reset.meyer.css"  media="screen" rel="stylesheet" type="text/css" />
-    <link href="./stylesheets/layout.css"       media="screen" rel="stylesheet" type="text/css" />
-    <link href=".//stylesheets/18vertical.css"  media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js" type="text/javascript"></script>
+    <link href="./stylesheets/reset.meyer.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/layout.css"      media="screen" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/18vertical.css"  media="screen" rel="stylesheet" type="text/css" />
+    <script src="./javascripts/jQuery.min.js"  type="text/javascript"></script>
+    <script src="./javascripts/application.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>18 Vertical - Make some rythm to your text.</h1>
     <p>18Vertical is a mini stylesheet that turn the standar typography of broswer to pretty well formated text.<p>
 
     <h2>Some lists.</h2>
-    <p>These are some example of list that you can use for different.</p>
     <h3>Classic style.</h3>
-    <ul class='classic'>
+    <ul>
       <li>First element.</li>
       <li>Second element.</li>
       <li>Third element.</li>
     </ul>
-    <p><span class="label warning">CODE EXAMPLE</span></p>
-    <pre>&lt;ul class=&#x27;classic&#x27;&gt;<br>  &lt;li&gt;First element.&lt;/li&gt;<br>  &lt;li&gt;Second element.&lt;/li&gt;<br>  &lt;li&gt;Third element.&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+    <p><span class="label warning code">CODE EXAMPLE</span></p>
+    <pre>&lt;ul&gt;<br>  &lt;li&gt;First element.&lt;/li&gt;<br>  &lt;li&gt;Second element.&lt;/li&gt;<br>  &lt;li&gt;Third element.&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+    <h3>With some order.</h3>
+    <ol>
+      <li>First element.</li>
+      <li>Second element.</li>
+      <li>Third element.</li>
+    </ol>
+    <p><span class="label warning code">CODE EXAMPLE</span></p>
+    <pre>&lt;ol&gt;<br>  &lt;li&gt;First element.&lt;/li&gt;<br>  &lt;li&gt;Second element.&lt;/li&gt;<br>  &lt;li&gt;Third element.&lt;/li&gt;<br>&lt;/ol&gt;</pre>
+
     <h2>Media presentation.</h2>
+    <h3>For a citation.</h3>
     <blockquote>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <small>Author name</small>
     </blockquote>
-    <p><span class="label warning">CODE EXAMPLE</span></p>
+    <p><span class="label warning code">CODE EXAMPLE</span></p>
     <pre>&lt;blockquote&gt;<br>    &lt;p&gt;Your quotation.&lt;/p&gt;<br>    &lt;small&gt;Author&lt;/small&gt;<br>&lt;/bloquote&gt;</pre>
+    <h3>To show source code.</h3>
+    <pre>&lt;div class=&#x27;example&#x27;&gt;<br>  Some code here...<br>&lt;/div&gt;</pre>
+    <p><span class="label warning code">CODE EXAMPLE</span></p>
+    <pre>&lt;pre&gt;<br>  Your code here...<br>&lt;/pre&gt;</pre>
+    <h3>Some inline labels.</h3>
+    <p>
+      This is a <span class='label notice'>notice</span> for your user.<br>
+      But sometime <span class='label important'>errors</span> happens.<br>
+      So, do some <span class='label warning'>warnings</span> in your website.<br>
+      And it will be a <span class='label success'>success</span>.
+    </p>
+    <p><span class="label warning code">CODE EXAMPLE</span></p>
+    <pre>&lt;span class=&#x27;label notice&#x27;&gt;...&lt;/span&gt;<br>&lt;span class=&#x27;label important&#x27;&gt;...&lt;/span&gt;<br>&lt;span class=&#x27;label warning&#x27;&gt;...&lt;/span&gt;<br>&lt;span class=&#x27;label success&#x27;&gt;...&lt;/span&gt;</pre>
   </body>
 </html>
